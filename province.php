@@ -8,19 +8,19 @@
 
 echo '<body style="background-color:#57E964">';
 echo "<center><table border='1'>";
-echo "<tr><td style= 'background-color:#E9967A'>ลำดับ</td>
-      <td style= 'background-color:#E9967A'>จังหวัด</td>
-      <td style= 'background-color:#E9967A'>จำนวนผู้ป่วยใหม่</td>
-      <td style= 'background-color:#E9967A'>จำนวนผู้ป่วยสะสม</td>
-      <td style= 'background-color:#E9967A'>จำนวนผู้ป่วยใหม่(รวมต่างประเทศ)</td>
-      <td style= 'background-color:#E9967A'>จำนวนผู้ป่วยสะสม(รวมต่างประเทศ)</td>
-      <td style= 'background-color:#E9967A'>จำนวนผู้เสียชีวิต</td>
-      <td style= 'background-color:#E9967A'>จำนวนผู้เสียชีวิตสะสม</td>
+echo "<tr><td style= 'background-color:#F2A2E8'>ลำดับ</td>
+      <td style= 'background-color:##F2A2E8'>จังหวัด</td>
+      <td style= 'background-color:#F2A2E8'>จำนวนผู้ป่วยใหม่</td>
+      <td style= 'background-color:#F2A2E8'>จำนวนผู้ป่วยสะสม</td>
+      <td style= 'background-color:#F2A2E8'>จำนวนผู้ป่วยใหม่(รวมต่างประเทศ)</td>
+      <td style= 'background-color:#F2A2E8'>จำนวนผู้ป่วยสะสม(รวมต่างประเทศ)</td>
+      <td style= 'background-color:#F2A2E8'>จำนวนผู้เสียชีวิต</td>
+      <td style= 'background-color:#F2A2E8'>จำนวนผู้เสียชีวิตสะสม</td>
       </tr>";
   
 foreach($data as $key=>$val){
   echo "<tr>";
-  echo "<td style= 'background-color:#FFCBA4'>";
+  echo "<td style= 'background-color:#F2A2E8'>";
   echo ($key+1);
   echo "</td>";
   echo "<td style= 'background-color:#E8ADAA'>";
