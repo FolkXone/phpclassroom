@@ -2,7 +2,7 @@
 
   $json = file_get_contents("https://covid19.ddc.moph.go.th/api/Cases/today-cases-by-provinces%22);
   $data = json_decode($json);
-echo "<center><b>รายงานสถานการโควิด-19 แยกจังหวัด</b></center>"."<br>";
+echo "<h1><center><b>รายงานสถานการโควิด-19 แยกจังหวัด</b></center></h1>.'<br>'";
 echo '<body style="background-color:#40E0D0">';
 echo "<center><table border='1'>";
 echo "<tr><td>ลำดับ</td><td>จังหวัด</td><td>จำนวนผู้ป่วยใหม่</td><td>จำนวนผู้ป่วยสะสม</td>
@@ -38,4 +38,5 @@ foreach($data as $key=>$val){
   echo "</tr>";
 }
 echo "</table></center>";
+
 ?>
