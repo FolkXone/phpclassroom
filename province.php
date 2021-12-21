@@ -1,26 +1,26 @@
 <?php
 
-  $json = file_get_contents("https://covid19.ddc.moph.go.th/api/Cases/today-cases-by-provinces");
+  $json = file_get_contents("https://covid19.ddc.moph.go.th/api/Cases/today-cases-by-provinces%22);
   $data = json_decode($json);
 
     echo "<center><b>รายงานสถานการณ์โควิด-19 แยกจังหวัด</b></center>";
     echo "<br><br>";
 
-echo '<body style="background-color:#57E964">';
+echo '<body style="background-color:#82CAFF">';
 echo "<center><table border='1'>";
-echo "<tr><td style= 'background-color:#F2A2E8'>ลำดับ</td>
-      <td style= 'background-color:#F2A2E8'>จังหวัด</td>
-      <td style= 'background-color:#F2A2E8'>จำนวนผู้ป่วยใหม่</td>
-      <td style= 'background-color:#F2A2E8'>จำนวนผู้ป่วยสะสม</td>
-      <td style= 'background-color:#F2A2E8'>จำนวนผู้ป่วยใหม่(รวมต่างประเทศ)</td>
-      <td style= 'background-color:#F2A2E8'>จำนวนผู้ป่วยสะสม(รวมต่างประเทศ)</td>
-      <td style= 'background-color:#F2A2E8'>จำนวนผู้เสียชีวิต</td>
-      <td style= 'background-color:#F2A2E8'>จำนวนผู้เสียชีวิตสะสม</td>
+echo "<tr><td style= 'background-color:#FFCBA4'>ลำดับ</td>
+      <td style= 'background-color:#E8ADAA'>จังหวัด</td>
+      <td style= 'background-color:#E8ADAA'>จำนวนผู้ป่วยใหม่</td>
+      <td style= 'background-color:#E8ADAA'>จำนวนผู้ป่วยสะสม</td>
+      <td style= 'background-color:#E8ADAA'>จำนวนผู้ป่วยใหม่(รวมต่างประเทศ)</td>
+      <td style= 'background-color:#E8ADAA'>จำนวนผู้ป่วยสะสม(รวมต่างประเทศ)</td>
+      <td style= 'background-color:#E8ADAA'>จำนวนผู้เสียชีวิต</td>
+      <td style= 'background-color:#E8ADAA'>จำนวนผู้เสียชีวิตสะสม</td>
       </tr>";
-  
+
 foreach($data as $key=>$val){
   echo "<tr>";
-  echo "<td style= 'background-color:#F2A2E8'>";
+  echo "<td style= 'background-color:#FFCBA4'>";
   echo ($key+1);
   echo "</td>";
   echo "<td style= 'background-color:#E8ADAA'>";
@@ -49,7 +49,7 @@ foreach($data as $key=>$val){
 echo "</table></center>";
 
 echo "<br><br>";
-echo "วันที่อัพเดต";
-echo $val->txn_date;
+echo "<center>วันที่อัพเดต</center>";
+echo "<center>$val->txn_date</center>";
 
 ?>
