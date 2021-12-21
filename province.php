@@ -6,16 +6,16 @@
     echo "<center><b>รายงานสถานการณ์โควิด-19 แยกจังหวัด</b></center>";
     echo "<br><br>";
 
-echo '<body style="background-color:#82CAFF">';
+echo '<body style="background-color:#FFFFE0">';
 echo "<center><table border='1'>";
-echo "<tr><td style= 'background-color:#FFCBA4'>ลำดับ</td>
-      <td style= 'background-color:#E8ADAA'>จังหวัด</td>
-      <td style= 'background-color:#E8ADAA'>จำนวนผู้ป่วยใหม่</td>
-      <td style= 'background-color:#E8ADAA'>จำนวนผู้ป่วยสะสม</td>
-      <td style= 'background-color:#E8ADAA'>จำนวนผู้ป่วยใหม่(รวมต่างประเทศ)</td>
-      <td style= 'background-color:#E8ADAA'>จำนวนผู้ป่วยสะสม(รวมต่างประเทศ)</td>
-      <td style= 'background-color:#E8ADAA'>จำนวนผู้เสียชีวิต</td>
-      <td style= 'background-color:#E8ADAA'>จำนวนผู้เสียชีวิตสะสม</td>
+echo "<tr><td style= 'background-color:#FCDFFF'>ลำดับ</td>
+      <td style= 'background-color:#FCDFFF'>จังหวัด</td>
+      <td style= 'background-color:#FCDFFF'>จำนวนผู้ป่วยใหม่</td>
+      <td style= 'background-color:#FCDFFF'>จำนวนผู้ป่วยสะสม</td>
+      <td style= 'background-color:#FCDFFF'>จำนวนผู้ป่วยใหม่(รวมต่างประเทศ)</td>
+      <td style= 'background-color:#FCDFFF'>จำนวนผู้ป่วยสะสม(รวมต่างประเทศ)</td>
+      <td style= 'background-color:#FCDFFF'>จำนวนผู้เสียชีวิต</td>
+      <td style= 'background-color:#FCDFFF'>จำนวนผู้เสียชีวิตสะสม</td>
       </tr>";
   
 foreach($data as $key=>$val){
@@ -23,32 +23,32 @@ foreach($data as $key=>$val){
   echo "<td style= 'background-color:#FFCBA4'>";
   echo ($key+1);
   echo "</td>";
-  echo "<td style= 'background-color:#E8ADAA'>";
+  echo "<td style= 'background-color:#9AFEFF'>";
   echo $val->province;
   echo "</td>";
-  echo "<td style= 'background-color:#E8ADAA'>";
+  echo "<td style= 'background-color:#9AFEFF'>";
   echo $val->new_case;
   echo "</td>";
-  echo "<td style= 'background-color:#E8ADAA'>";
+  echo "<td style= 'background-color:#9AFEFF'>";
   echo $val->total_case;
   echo "</td>";
-  echo "<td style= 'background-color:#E8ADAA'>";
+  echo "<td style= 'background-color:#9AFEFF'>";
   echo $val->new_case_excludeabroad;
   echo "</td>";
-  echo "<td style= 'background-color:#E8ADAA'>";
+  echo "<td style= 'background-color:#9AFEFF'>";
   echo $val->total_case_excludeabroad;
   echo "</td>";
-  echo "<td style= 'background-color:#E8ADAA'>";
+  echo "<td style= 'background-color:#9AFEFF'>";
   echo $val->new_death;
   echo "</td>";
-  echo "<td style= 'background-color:#E8ADAA'>";
+  echo "<td style= 'background-color:#9AFEFF'>";
   echo $val->total_death;
   echo "</td>";
   echo "</tr>";
 }
 echo "</table></center>";
 
-echo "<br><br>";
+echo "<br>";
 echo "<center>วันที่อัพเดต</center>";
 echo "<center>$val->txn_date</center>";
 
