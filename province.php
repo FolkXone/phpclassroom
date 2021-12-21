@@ -20,7 +20,7 @@ echo "<tr><td style= 'background-color:#FCDFFF'>ลำดับ</td>
   
 foreach($data as $key=>$val){
   echo "<tr>";
-  echo "<td style= 'background-color:#E8ADAA'>";
+  echo "<td style= 'background-color:#FDEEF4'>";
   echo ($key+1);
   echo "</td>";
   echo "<td style= 'background-color:#9AFEFF'>";
