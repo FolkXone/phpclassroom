@@ -38,5 +38,4 @@ foreach($data as $key=>$val){
   echo "</tr>";
 }
 echo "</table></center>";
-
 ?>
