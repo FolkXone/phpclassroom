@@ -9,7 +9,7 @@
 echo '<body style="background-color:#57E964">';
 echo "<center><table border='1'>";
 echo "<tr><td style= 'background-color:#F2A2E8'>ลำดับ</td>
-      <td style= 'background-color:##F2A2E8'>จังหวัด</td>
+      <td style= 'background-color:#F2A2E8'>จังหวัด</td>
       <td style= 'background-color:#F2A2E8'>จำนวนผู้ป่วยใหม่</td>
       <td style= 'background-color:#F2A2E8'>จำนวนผู้ป่วยสะสม</td>
       <td style= 'background-color:#F2A2E8'>จำนวนผู้ป่วยใหม่(รวมต่างประเทศ)</td>
