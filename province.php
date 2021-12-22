@@ -8,14 +8,14 @@
 
 echo '<body style="background-color:#FFFFE0">';
 echo "<center><table border='1'>";
-echo "<tr><td style= 'background-color:#FCDFFF'>ลำดับ</td>
-      <td style= 'background-color:#FCDFFF'>จังหวัด</td>
-      <td style= 'background-color:#FCDFFF'>จำนวนผู้ป่วยใหม่</td>
-      <td style= 'background-color:#FCDFFF'>จำนวนผู้ป่วยสะสม</td>
-      <td style= 'background-color:#FCDFFF'>จำนวนผู้ป่วยใหม่(รวมต่างประเทศ)</td>
-      <td style= 'background-color:#FCDFFF'>จำนวนผู้ป่วยสะสม(รวมต่างประเทศ)</td>
-      <td style= 'background-color:#FCDFFF'>จำนวนผู้เสียชีวิต</td>
-      <td style= 'background-color:#FCDFFF'>จำนวนผู้เสียชีวิตสะสม</td>
+echo "<tr><td style= 'background-color:#FCDFFF'><b>ลำดับ</b></td>
+      <td style= 'background-color:#FCDFFF'><b>จังหวัด</b></td>
+      <td style= 'background-color:#FCDFFF'><b>จำนวนผู้ป่วยใหม่</b></td>
+      <td style= 'background-color:#FCDFFF'><b>จำนวนผู้ป่วยสะสม</b></td>
+      <td style= 'background-color:#FCDFFF'><b>จำนวนผู้ป่วยใหม่(รวมต่างประเทศ)</b></td>
+      <td style= 'background-color:#FCDFFF'><b>จำนวนผู้ป่วยสะสม(รวมต่างประเทศ)</b></td>
+      <td style= 'background-color:#FCDFFF'><b>จำนวนผู้เสียชีวิต</b></td>
+      <td style= 'background-color:#FCDFFF'><b>จำนวนผู้เสียชีวิตสะสม</b></td>
       </tr>";
   
 foreach($data as $key=>$val){
