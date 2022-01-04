@@ -9,34 +9,36 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 
     <title>Hello, world!</title>
+    
     <style>
-     #col1{
-        background-color: blue;
-      } 
-      #col2{ 
-        background-color: green;
-      } 
-      
-      #col3{
+      #col1{
         background-color: red;
       }
       
-    </style>       
+      #col2{
+        background-color: green;
+      }
+      
+      #col3{
+        background-color: blue;
+      }
+    </style>
+    
   </head>
   <body>
-    
-        <div class="container">
+    <div class="container">
       <div class="row">
         <div id="col1" class="col-4">
           Column
         </div>
-        <div id="col2" class="col-4">
+        <div id="col2"  class="col-4">
           Column
         </div>
-        <div id="col3" class="col-4">
+        <div id="col3"  class="col-4">
           Column
         </div>
       </div>
     </div>
   </body>
 </html>
+
