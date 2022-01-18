@@ -126,7 +126,7 @@
       <div class="col">
         <table class="table table-striped rounded-3">
          <?php
-  $json = file_get_contents("https://covid19.ddc.moph.go.th/api/Cases/today-cases-by-provinces");
+   $json = file_get_contents("https://covid19.ddc.moph.go.th/api/Cases/today-cases-by-provinces");
   $data = json_decode($json);
 echo '<body style="background-color:#FFFFE0">';
 echo "<center><table border='1'>";
@@ -139,6 +139,7 @@ echo "<tr><td style= 'background-color:#FCDFFF'><b>ลำดับ</b></td>
       <td style= 'background-color:#FCDFFF'><b>จำนวนผู้เสียชีวิต</b></td>
       <td style= 'background-color:#FCDFFF'><b>จำนวนผู้เสียชีวิตสะสม</b></td>
       </tr>";
+  
 foreach($data as $key=>$val){
   echo "<tr>";
   echo "<td style= 'background-color:#FDEEF4'>";
@@ -168,6 +169,7 @@ foreach($data as $key=>$val){
   echo "</tr>";
 }
 echo "</table></center>";
+  ?>
         </table>
       </div>
     </div>
