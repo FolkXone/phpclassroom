@@ -125,44 +125,16 @@
     <div class="row">
       <div class="col">
         <table class="table table-striped rounded-3">
-          <tr>
-            <th>#</th>
-            <th>จังหวัด</th>
-            <th>ผู้ป่วยใหม่</th>
-            <th>หายป่วยกลับบ้าน</th>
-            <th>ผู้ป่วยสะสม</th>
-            <th>เสียชีวิต</th>
-          </tr>
-          <!-- แก้ไขส่วนที่ 3 -->
-          <!-- Loop -->
-            foreach($data as $key=>$val){
+         <?php
+        $row = 3;
+        for($i=0;$i<$row;$i++){
           echo "<tr>";
-  echo "<td style= 'background-color:#FDEEF4'>";
-  echo ($key+1);
-  echo "</td>";
-  echo "<td style= 'background-color:#CCFFFF'>";
-  echo $val->province;
-  echo "</td>";
-  echo "<td style= 'background-color:#CCFFFF'>";
-  echo $val->new_case;
-  echo "</td>";
-  echo "<td style= 'background-color:#CCFFFF'>";
-  echo $val->total_case;
-  echo "</td>";
-  echo "<td style= 'background-color:#CCFFFF'>";
-  echo $val->new_case_excludeabroad;
-  echo "</td>";
-  echo "<td style= 'background-color:#CCFFFF'>";
-  echo $val->total_case_excludeabroad;
-  echo "</td>";
-  echo "<td style= 'background-color:#CCFFFF'>";
-  echo $val->new_death;
-  echo "</td>";
-  echo "<td style= 'background-color:#CCFFFF'>";
-  echo $val->total_death;
-  echo "</td>";
-  echo "</tr>";
-}
+          echo "<td>คอลัมน์ที่ 1</td>";
+          echo "<td>คอลัมน์ที่ 2</td>";
+          echo "<td>คอลัมน์ที่ 3</td>";
+          echo "</tr>";
+        }
+      ?>
         </table>
       </div>
     </div>
