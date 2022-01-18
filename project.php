@@ -54,7 +54,7 @@
       <div class="card mb-3" style="max-width: 540px;">
         <div class="row g-0">
           <div class="col-md-4">
-            <img src="profile.jpg" class="img-fluid rounded-start" alt="...">
+            <img src="รูปจริง.jpeg" class="img-fluid rounded-start" alt="...">
           </div>
           <div class="col-md-8">
             <div class="card-body">
@@ -137,11 +137,8 @@
           <!-- Loop -->
           <tr>
             <?php
-
   $json = file_get_contents("https://covid19.ddc.moph.go.th/api/Cases/today-cases-by-provinces");
   $data = json_decode($json);
-
-  
 foreach($data as $key=>$val){
   echo "<tr>";
   echo "<td>";
@@ -163,10 +160,8 @@ foreach($data as $key=>$val){
   echo $val->new_death;
   echo "</td>";
   echo "<td>";
-
 }
 echo "</table></center>";
-
 ?>
           </tr>
         </table>
