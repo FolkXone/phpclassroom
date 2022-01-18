@@ -126,17 +126,18 @@
       <div class="col">
         <table class="table table-striped rounded-3">
           <tr>
-            <th>#</th>
+            <th>ลำดับ</th>
             <th>จังหวัด</th>
             <th>ผู้ป่วยใหม่</th>
+            <th>เสียชีวิตรวม</th>
             <th>ผู้ป่วยสะสม</th>
             <th>เสียชีวิต</th>
-            <th>เสียชีวิตรวม</th>
           </tr>
-         
-           <?php
-      $json = file_get_contents("https://covid19.ddc.moph.go.th/api/Cases/today-cases-by-provinces%22);
-        $data = json_decode($json);
+          <!-- แก้ไขส่วนที่ 3 -->
+          <!-- Loop -->
+          <?php
+      $json = file_get_contents("https://covid19.ddc.moph.go.th/api/Cases/today-cases-by-provinces");
+        $data = json_decode($json);     
 foreach($data as $key=>$val){
   echo "<tr>";
   echo "<td>";
@@ -161,11 +162,15 @@ foreach($data as $key=>$val){
   echo "</tr>";
 }
 ?>
-        </table>
+
+    </table>
       </div>
     </div>
+
   </footer>
 </div>
+
+
     
   </body>
 </html>
