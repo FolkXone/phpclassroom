@@ -125,6 +125,7 @@
     <div class="row">
       <div class="col">
         <table class="table table-striped rounded-3">
+          <?php
           echo "<tr><td style= 'background-color:#FCDFFF'><b>ลำดับ</b></td>
       <td style= 'background-color:#FCDFFF'><b>จังหวัด</b></td>
       <td style= 'background-color:#FCDFFF'><b>จำนวนผู้ป่วยใหม่</b></td>
@@ -163,6 +164,8 @@ foreach($data as $key=>$val){
   echo "</td>";
   echo "</tr>";
 }
+echo "</table></center>";
+          ?>
         </table>
       </div>
     </div>
