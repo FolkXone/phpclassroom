@@ -134,35 +134,33 @@
             <th>เสียชีวิตรวม</th>
           </tr>
          
-            <?php foreach($data as $key=>$val){
-              echo "<tr>";
-                echo "<td>";
-                echo ($key+1);
-                echo "</td>";
-  
-                echo "<td>";
-                echo $val->province;
-                echo "</td>";
-  
-                echo "<td>";
-                echo $val->new_case;
-                echo "</td>";
-  
-                echo "<td>";
-                echo $val->total_case;
-                echo "</td>";
-  
-                echo "<td>";
-                echo $val->new_death;
-                echo "</td>";
-  
-                echo "<td>";
-                echo $val->total_death;
-                echo "</td>";
+           <?php
+      $json = file_get_contents("https://covid19.ddc.moph.go.th/api/Cases/today-cases-by-provinces%22);
+        $data = json_decode($json);
+foreach($data as $key=>$val){
+  echo "<tr>";
+  echo "<td>";
+  echo ($key+1);
+  echo "</td>";
+  echo "<td>";
+  echo $val->province;
+  echo "</td>";
+  echo "<td>";
+  echo $val->new_case;
+  echo "</td>";
+  echo "<td>";
+  echo $val->total_death;
+  echo "</td>";
+  echo "<td>";
+  echo $val->total_case;
+  echo "</td>";
+  echo "<td>";
+  echo $val->new_death;
+  echo "</td>";
  
-             echo "</tr>";
-            } 
-          ?>
+  echo "</tr>";
+}
+?>
         </table>
       </div>
     </div>
