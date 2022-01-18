@@ -125,42 +125,24 @@
     <div class="row">
       <div class="col">
         <table class="table table-striped rounded-3">
-         <?php
-  $json = file_get_contents("https://covid19.ddc.moph.go.th/api/Cases/today-cases-by-provinces");
-  $data = json_decode($json);
-echo "<center><table border='1'>";
-echo "<tr><td style='background-color:#FCDFFF'><b>#</b></td>
-      <td style= 'background-color:#FCDFFF'><b>จังหวัด</b></td>
-      <td style= 'background-color:#FCDFFF'><b>ผู้ป่วยใหม่</b></td>
-      <td style= 'background-color:#FCDFFF'><b>หายป่วยกลับบ้าน</b></td>
-      <td style= 'background-color:#FCDFFF'><b>ผู้ป่วยสะสม</b></td>
-      <td style= 'background-color:#FCDFFF'><b>เสียชีวิต</b></td>
-      </tr>";
-  
-foreach($data as $key=>$val){
-  echo "<tr>";
-  echo "<td style= 'background-color:#FDEEF4'>";
-  echo ($key+1);
-  echo "</td>";
-  echo "<td style= 'background-color:#CCFFFF'>";
-  echo $val->province;
-  echo "</td>";
-  echo "<td style= 'background-color:#CCFFFF'>";
-  echo $val->new_case;
-  echo "</td>";
-  echo "<td style= 'background-color:#CCFFFF'>";
-  echo $val->total_case;
-  echo "</td>";
-  echo "<td style= 'background-color:#CCFFFF'>";
-  echo $val->new_case_excludeabroad;
-  echo "</td>";
-  echo "<td style= 'background-color:#CCFFFF'>";
-  echo $val->new_death;
-  echo "</td>";
-  echo "</tr>";
-}
-echo "</table></center>";
- ?>
+          <tr>
+            <th>#</th>
+            <th>จังหวัด</th>
+            <th>ผู้ป่วยใหม่</th>
+            <th>หายป่วยกลับบ้าน</th>
+            <th>ผู้ป่วยสะสม</th>
+            <th>เสียชีวิต</th>
+          </tr>
+          <!-- แก้ไขส่วนที่ 3 -->
+          <!-- Loop -->
+          <?php
+        $row = 50;
+        for($i=0;$i<$row;$i++){
+          echo "<tr>";
+          echo "<tr>คอลัมน์ที่ 1</tr>";
+          echo "</tr>";
+        }
+      ?>
         </table>
       </div>
     </div>
