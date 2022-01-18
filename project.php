@@ -135,16 +135,14 @@
          <?php
   $json = file_get_contents("https://covid19.ddc.moph.go.th/api/Cases/today-cases-by-provinces");
   $data = json_decode($json);
-echo '<body style="background-color:#FFFFE0">';
 echo "<center><table border='1'>";
-echo "<tr><td style= 'background-color:#FCDFFF'><b>ลำดับ</b></td>
+echo "<tr><td style='background-color:#FCDFFF'><b>#</b></td>
       <td style= 'background-color:#FCDFFF'><b>จังหวัด</b></td>
-      <td style= 'background-color:#FCDFFF'><b>จำนวนผู้ป่วยใหม่</b></td>
-      <td style= 'background-color:#FCDFFF'><b>จำนวนผู้ป่วยสะสม</b></td>
-      <td style= 'background-color:#FCDFFF'><b>จำนวนผู้ป่วยใหม่(รวมต่างประเทศ)</b></td>
+      <td style= 'background-color:#FCDFFF'><b>ผู้ป่วยใหม่</b></td>
+      <td style= 'background-color:#FCDFFF'><b>หายป่วยกลับบ้าน</b></td>
+      <td style= 'background-color:#FCDFFF'><b>ผู้ป่วยสะสม</b></td>
       <td style= 'background-color:#FCDFFF'><b>จำนวนผู้ป่วยสะสม(รวมต่างประเทศ)</b></td>
-      <td style= 'background-color:#FCDFFF'><b>จำนวนผู้เสียชีวิต</b></td>
-      <td style= 'background-color:#FCDFFF'><b>จำนวนผู้เสียชีวิตสะสม</b></td>
+      <td style= 'background-color:#FCDFFF'><b>เสียชีวิต</b></td>
       </tr>";
   
 foreach($data as $key=>$val){
