@@ -125,13 +125,6 @@
     <div class="row">
       <div class="col">
         <table class="table table-striped rounded-3">
-         <tr>
-            <th>#</th>
-            <th>จังหวัด</th>
-            <th>ผู้ป่วยใหม่</th>
-            <th>หายป่วยกลับบ้าน</th>
-            <th>ผู้ป่วยสะสม</th>
-            <th>เสียชีวิต</th>
          <?php
   $json = file_get_contents("https://covid19.ddc.moph.go.th/api/Cases/today-cases-by-provinces");
   $data = json_decode($json);
