@@ -133,12 +133,8 @@
             <th>เสียชีวิต</th>
             <th>เสียชีวิตสะสม</th>
           </tr>
-          <!-- แก้ไขส่วนที่ 3 -->
-          <!-- Loop -->
-          <tr>
+          
             <?php
-  $json = file_get_contents("https://covid19.ddc.moph.go.th/api/Cases/today-cases-by-provinces");
-  $data = json_decode($json);
 foreach($data as $key=>$val){
   echo "<tr>";
   echo "<td>";
@@ -160,8 +156,8 @@ foreach($data as $key=>$val){
   echo $val->total_death;
   echo "</td>";
   echo "<td>";
-}
-echo "</table></center>";
+echo "</tr>";
+  }
 ?>
           </tr>
         </table>
