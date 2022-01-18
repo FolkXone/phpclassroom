@@ -154,6 +154,7 @@
           echo "</td>";
           echo "</tr>";
         }
+echo "</table></center>";
       ?>
         </table>
       </div>
