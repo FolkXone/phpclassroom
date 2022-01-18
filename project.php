@@ -156,6 +156,7 @@
         }
 echo "</table></center>";
       ?>
+          </tr>
         </table>
       </div>
     </div>
