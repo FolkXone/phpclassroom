@@ -131,35 +131,38 @@
             <th>ผู้ป่วยใหม่</th>
             <th>ผู้ป่วยสะสม</th>
             <th>เสียชีวิต</th>
-            <th>เสียชีวิตสะสม</th>
+            <th>เสียชีวิตรวม</th>
           </tr>
-          
-            <?php
-foreach($data as $key=>$val){
-  echo "<tr>";
-  echo "<td>";
-  echo ($key+1);
-  echo "</td>";
-  echo "<td>";
-  echo $val->province;
-  echo "</td>";
-  echo "<td>";
-  echo $val->new_case;
-  echo "</td>";
-  echo "<td>";
-  echo $val->total_case;
-  echo "</td>";
-  echo "<td>";
-  echo $val->new_death;
-  echo "</td>";
-  echo "<td>";
-  echo $val->total_death;
-  echo "</td>";
-  echo "<td>";
-echo "</tr>";
-  }
-?>
-          </tr>
+         
+            <?php foreach($data as $key=>$val){
+              echo "<tr>";
+                echo "<td>";
+                echo ($key+1);
+                echo "</td>";
+  
+                echo "<td>";
+                echo $val->province;
+                echo "</td>";
+  
+                echo "<td>";
+                echo $val->new_case;
+                echo "</td>";
+  
+                echo "<td>";
+                echo $val->total_case;
+                echo "</td>";
+  
+                echo "<td>";
+                echo $val->new_death;
+                echo "</td>";
+  
+                echo "<td>";
+                echo $val->total_death;
+                echo "</td>";
+ 
+             echo "</tr>";
+            } 
+          ?>
         </table>
       </div>
     </div>
