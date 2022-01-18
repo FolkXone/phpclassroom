@@ -136,15 +136,16 @@
           <!-- แก้ไขส่วนที่ 3 -->
           <!-- Loop -->
           <?php
-        $row = 100;
-        for($i=0;$i<$row;$i++){
+  $json = file_get_contents("https://covid19.ddc.moph.go.th/api/Cases/today-cases-by-provinces");
+  $data = json_decode($json);
+        foreach($data as $key=>$val){
           echo "<tr>";
-          echo "<td>คอลัมน์ที่ 1</td>";
-          echo "<td>คอลัมน์ที่ 2</td>";
-          echo "<td>คอลัมน์ที่ 3</td>";
-          echo "<td>คอลัมน์ที่ 4</td>";
-          echo "<td>คอลัมน์ที่ 5</td>";
-          echo "<td>คอลัมน์ที่ 6</td>";
+          echo ($key+1);
+          echo $val->province;
+          echo $val->new_case;
+          echo $val->total_case;
+          echo $val->new_case_excludeabroad;
+          echo $val->total_case_excludeabroad;
           echo "</tr>";
         }
       ?>
