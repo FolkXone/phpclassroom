@@ -141,7 +141,6 @@ echo "<tr><td style='background-color:#FCDFFF'><b>#</b></td>
       <td style= 'background-color:#FCDFFF'><b>ผู้ป่วยใหม่</b></td>
       <td style= 'background-color:#FCDFFF'><b>หายป่วยกลับบ้าน</b></td>
       <td style= 'background-color:#FCDFFF'><b>ผู้ป่วยสะสม</b></td>
-      <td style= 'background-color:#FCDFFF'><b>จำนวนผู้ป่วยสะสม(รวมต่างประเทศ)</b></td>
       <td style= 'background-color:#FCDFFF'><b>เสียชีวิต</b></td>
       </tr>";
   
@@ -163,13 +162,7 @@ foreach($data as $key=>$val){
   echo $val->new_case_excludeabroad;
   echo "</td>";
   echo "<td style= 'background-color:#CCFFFF'>";
-  echo $val->total_case_excludeabroad;
-  echo "</td>";
-  echo "<td style= 'background-color:#CCFFFF'>";
   echo $val->new_death;
-  echo "</td>";
-  echo "<td style= 'background-color:#CCFFFF'>";
-  echo $val->total_death;
   echo "</td>";
   echo "</tr>";
 }
