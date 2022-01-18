@@ -141,11 +141,17 @@
         foreach($data as $key=>$val){
           echo "<tr>";
           echo ($key+1);
+          echo "</td>";
           echo $val->province;
+          echo "</td>";
           echo $val->new_case;
+          echo "</td>";
           echo $val->total_case;
+          echo "</td>";
           echo $val->new_case_excludeabroad;
+          echo "</td>";
           echo $val->total_case_excludeabroad;
+          echo "</td>";
           echo "</tr>";
         }
       ?>
